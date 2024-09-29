@@ -5,6 +5,6 @@ public class SomaCalculo {
             K = K + 1;
             SOMA = SOMA + K;
         }
-        System.out.println("O valor da variável SOMA é: " + SOMA); // Deve imprimir 78
+        System.out.println("O valor da variável SOMA é: " + SOMA);
     }
 }
