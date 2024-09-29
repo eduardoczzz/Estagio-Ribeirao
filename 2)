@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ContarA {
+    public static int contarLetraA(String s) {
+        int count = 0;
+        s = s.toLowerCase(); // Tornando a string minúscula para contar 'a' e 'A'
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'a') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Informe uma string: ");
+        String str = sc.nextLine();
+        int count = contarLetraA(str);
+        System.out.println("A letra 'a' aparece " + count + " vez(es) na string.");
+        sc.close();
+    }
+}
